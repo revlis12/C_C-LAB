@@ -1,0 +1,15 @@
+/* 정수 하나를 입력받아 짝수이면 "Even" 홀수이면 "Odd"를 출력하는 프로그램을 완성하시오
+ (조건 연산자 ?:를 사용할 것) 예시) 
+ 입력 -> 25 출력 -> Odd                              */
+
+ # include <stdio.h>
+
+ int main(){
+    int num;
+
+    scanf("%d", &num);
+
+    printf("%s", (num%2==0)? "Even" : "Odd");
+
+    return 0;
+ }
