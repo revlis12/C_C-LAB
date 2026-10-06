@@ -51,11 +51,18 @@ key보다 작은 원소를 만나거나 배열의 맨 앞에 도달하면 그 �
 
 [별찍기]
 순서대로)
-  for(int i=1; i <= n; i++) {  //행 : 
-      for (int j=1; j<=i; j++) { //열 : 
-          printf("*");
+for (int i = 1; i <= n; i++) {    // 행(줄): 1번째 줄부터 n번째 줄까지 반복 i++ 전위 증감식
+    for (int j = 1; j <= i; j++) {   // 열(별): 1개부터 현재 줄 번호(i)와 '같아질 때까지' 별 출력 반복
+        printf("*");
+    }
+    printf("\n");                    // 한 줄 출력이 끝나면 줄바꿈
+}
 
 역순)
-  for(int i=n; i >= 1; i--) {  //행
-      for (int j=1; j<= i; j++) { //열
+  for(int i=n; i >= 1; i--) { 
+      for (int j=1; j<= i; j++) { 
           printf("*");
+
+size_t : 32 -> 4 // 64 -> 8 : 크기를 받을 때 사용하는 자료형
+int arr[] = {10, 20, 30, 40, 50};
+int length = sizeof(arr) / sizeof(arr[0]);
